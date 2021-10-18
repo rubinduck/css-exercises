@@ -1,68 +1,60 @@
-/* this is some magical font-importing.  
-you'll learn about it later. */
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+html, body {
+  height: 100%;
+}
 
 body {
-  margin: 0;
-  background: #eee;
-  font-family: Besley, serif;
-}
-
-ul {
-  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
 }
 
-.header {
-  background: white;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
+img {
+  width: 100px;
+  height: 100px;
 }
 
-.header-part {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.header-part > .links {
-  display: flex;
-  gap: 1rem;
-}
-
-
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height:  48px;
-}
-
-.logo {
-  color: rebeccapurple;
-  font-size: 32px;
+.title {
+  font-size: 36px;
   font-weight: 900;
-  font-style: italic;
+  margin: 0.5rem 0 2rem 0;
 }
 
-button {
-  border: none;
-  border-radius: 8px;
-  background: rebeccapurple;
-  color: white;
-  padding: 8px 24px;
+/* do not edit this footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;;
+  justify-content: center;
+  background: #eee;
 }
 
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
+
+.page-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 
-ul {
-  list-style-type: none;
+.all-plants-container {
+  display: flex;
+  justify-content: center;
+  gap: 3.25rem;
+}
+
+.plant-container {
+  max-width: 200px;
+}
+
+.plant-container > img {
+  margin: 0 auto;
+  display: block;
+} 
+
+.text {
+  text-align: center;
 }
