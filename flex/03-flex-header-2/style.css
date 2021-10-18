@@ -8,11 +8,31 @@ body {
   font-family: Besley, serif;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
+
+.header-part {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-part > .links {
+  display: flex;
+  gap: 1rem;
+}
+
 
 .profile-image {
   background: rebeccapurple;
